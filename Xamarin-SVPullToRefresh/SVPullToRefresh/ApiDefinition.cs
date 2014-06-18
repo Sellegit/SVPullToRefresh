@@ -11,10 +11,10 @@ namespace SVPullToRefresh {
   interface SVPullToRefresh_UIScrollView {
 
     [Export ("addPullToRefreshWithActionHandler:")]
-    void AddPullToRefresh (Action actionHandler);
+    void AddPullToRefreshWithActionHandler (Action actionHandler);
 
     [Export ("addPullToRefreshWithActionHandler:position:")]
-    void AddPullToRefresh (Action actionHandler, SVPullToRefreshPosition position);
+    void AddPullToRefreshWithActionHandler (Action actionHandler, SVPullToRefreshPosition position);
 
     [Export ("triggerPullToRefresh")]
     void TriggerPullToRefresh ();
@@ -88,7 +88,7 @@ namespace SVPullToRefresh {
   interface SVInfiniteScrolling_UIScrollView {
 
     [Export ("addInfiniteScrollingWithActionHandler:")]
-    void AddInfiniteScrolling (Action actionHandler);
+    void AddInfiniteScrollingWithActionHandler (Action actionHandler);
 
     [Export ("triggerInfiniteScrolling")]
     void TriggerInfiniteScrolling ();
